@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DadJoke from "../components/DadJoke";
+import NewsletterForm from "../components/NewsletterForm";
 import SavedJokeList from "../components/SavedJokesList";
 
 const DadJokeContainer = () => {
@@ -36,11 +37,13 @@ const DadJokeContainer = () => {
 
     return ( 
         <>
-            <h2>hello from dad joke container</h2>
+            <h2>Your Daily Dad Joke:</h2>
             {/* <pre>{JSON.stringify(joke, null, 2)}</pre> */}
             <DadJoke joke={joke} handleClick={handleClick} saveJoke={saveJoke}/>
-            <SavedJokeList savedJokes={savedJokes} deleteJoke={deleteJoke}/>
-    
+            <div className="list-form-container">
+                <SavedJokeList savedJokes={savedJokes} deleteJoke={deleteJoke}/>
+                <NewsletterForm/>
+            </div>
                 
         </>
      );

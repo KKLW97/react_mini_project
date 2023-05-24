@@ -1,7 +1,19 @@
 .dad-joke{
     display: flex;
-    justify-it: center;
-    background-color: palevioletred;
-    padding: 20px;
-    border-radius: 55px;
+    justify-content: space-around;
+    justify-items: center;
+    /* background-color: ; */
+    border-style: solid;
+    border-color: #DB5461;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.buttons > button{
+    padding: 10px;
+    background-color: #E3F2FD;
+}
+h3{
 }

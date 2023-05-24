@@ -1,0 +1,12 @@
+
+
+.saved{
+    background-color: #E3F2FD ;
+    text-align: center;
+
+}
+
+.list-jokes{
+    display: grid;
+    grid-template-columns: 1fr;
+}

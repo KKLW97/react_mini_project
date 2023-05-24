@@ -1,7 +1,26 @@
 .App{
-  background-color:rgb(170, 131, 233);
+  /* background-color:rgb(170, 131, 233); */
 }
 
 body{
-  background-color: bisque;
+  background-color: #FAFAFA;
+  font-family:Arial, Helvetica, sans-serif;
 }
+
+h1{
+  font-size: 50px;
+}
+
+h2{    
+  background-color: #E3F2FD ;
+  padding:10px;
+}
+
+button{
+  border-radius: 10px;
+}
+
+/* .list-form-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */

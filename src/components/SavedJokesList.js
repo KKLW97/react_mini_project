@@ -1,4 +1,4 @@
-import DadJoke from "./DadJoke";
+import './SavedJokesList.css'
 import SavedJoke from "./SavedJoke";
 
 const SavedJokeList = ({savedJokes, deleteJoke}) => {
@@ -6,12 +6,14 @@ const SavedJokeList = ({savedJokes, deleteJoke}) => {
     const listOfSavedJokes = savedJokes.map((joke, index) => <SavedJoke joke={joke} key={index} deleteJoke={deleteJoke} />)
 
     return ( 
-        <>
-            <h3>Saved Jokes:</h3>
-            <ul>
+        <div>            
+            <h2 className='saved'>Saved Jokes:</h2>
+        <div className='saved-jokes-list'>
+            <ul className='list-jokes'>
                 {listOfSavedJokes}
             </ul>
-        </>
+        </div>
+        </div>
      );
 }
  
