@@ -29,12 +29,17 @@ const DadJokeContainer = () => {
         setSavedJokes([...savedJokes, joke])
     }
 
+    const deleteJoke = (jokeToDelete) => {
+        const newList = savedJokes.filter(joke => joke.id !== jokeToDelete.id)
+        setSavedJokes(newList)
+    }
+
     return ( 
         <>
             <h2>hello from dad joke container</h2>
             {/* <pre>{JSON.stringify(joke, null, 2)}</pre> */}
             <DadJoke joke={joke} handleClick={handleClick} saveJoke={saveJoke}/>
-            <SavedJokeList savedJokes={savedJokes}/>
+            <SavedJokeList savedJokes={savedJokes} deleteJoke={deleteJoke}/>
     
                 
         </>

@@ -1,12 +1,13 @@
 import DadJoke from "./DadJoke";
+import SavedJoke from "./SavedJoke";
 
-const SavedJokeList = ({savedJokes}) => {
+const SavedJokeList = ({savedJokes, deleteJoke}) => {
 
-    const listOfSavedJokes = savedJokes.map((joke) => <DadJoke joke={joke} />)
+    const listOfSavedJokes = savedJokes.map((joke, index) => <SavedJoke joke={joke} key={index} deleteJoke={deleteJoke} />)
 
     return ( 
         <>
-            <h3>hello from saved joke list</h3>
+            <h3>Saved Jokes:</h3>
             <ul>
                 {listOfSavedJokes}
             </ul>

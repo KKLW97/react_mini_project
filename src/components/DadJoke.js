@@ -1,6 +1,13 @@
+import { useState } from 'react'
 import './DadJoke.css'
 
 const DadJoke = ({joke, handleClick, saveJoke}) => {
+    const [showButton, setShowButton] = useState(true);
+
+    const toggleButton = () => {
+        setShowButton(!showButton)
+    }
+    
     return ( 
     
         <div className="dad-joke">
