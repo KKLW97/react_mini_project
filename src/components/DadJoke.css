@@ -1,0 +1,7 @@
+.dad-joke{
+    display: flex;
+    justify-it: center;
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 55px;
+}

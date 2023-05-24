@@ -1,9 +1,13 @@
-const DadJoke = ({joke}) => {
+import './DadJoke.css'
+
+const DadJoke = ({joke, handleClick, saveJoke}) => {
     return ( 
-        <>
-            <h3>hello from dad joke container</h3>
+    
+        <div className="dad-joke">
             <h3>{joke.joke}</h3>
-        </>
+            <button onClick={() => saveJoke(joke)}>Save joke</button>
+            <button onClick={handleClick}>Generate new joke</button>
+        </div>
      );
 }
  
