@@ -5,6 +5,7 @@ import DadJokeContainer from './containers/DadJokeContainer';
 function App() {
   return (
     <div className="App">
+      <h1>Dad Jokes</h1>
       <DadJokeContainer/>
     </div>
   );
