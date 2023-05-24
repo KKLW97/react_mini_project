@@ -1,6 +1,8 @@
 form{
     display: grid;
     grid-template-columns: 1fr;
+    /* display: flex;
+    justify-content: space-between; */
     border-style: solid;
     border-color: #DB5461;
     padding: 15px;

@@ -8,11 +8,11 @@ const SavedJokeList = ({savedJokes, deleteJoke}) => {
     return ( 
         <div>            
             <h2 className='saved'>Saved Jokes:</h2>
-        <div className='saved-jokes-list'>
-            <ul className='list-jokes'>
-                {listOfSavedJokes}
-            </ul>
-        </div>
+            <div className='saved-jokes-list'>
+                <ul className='list-jokes'>
+                    {listOfSavedJokes}
+                </ul>
+            </div>
         </div>
      );
 }
